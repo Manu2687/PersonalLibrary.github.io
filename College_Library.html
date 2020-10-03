@@ -1,0 +1,203 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type = "text/css" href="CLStyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head> 
+
+ 
+<body>
+
+<div class=row1>
+     <div class=collegeLibrary>
+          <a>Personal  Libary</a>
+     </div>
+
+     <div class=menu>
+          <b>SEARCH</b>
+          <b>Contact</b>
+          <b>ABOUT</b>
+          <b class="active">HOME</b>
+     </div>
+</div>
+
+<br>
+
+<div class="parallax"></div>
+
+
+     <div class="signup">
+     <d><br></d>
+     <d><br></d>
+     <d>Sign up to add Notes, Assignments, TimeTable, Syllabus...</d><br><br>
+     <d><button class="open-button" onclick="openForm()">SIGN UP</button></d>
+
+     <div class="form-popup" id="myForm">
+     <form action="/action_page.php" class="form-container">
+     <h1>Login</h1>
+
+     <label for="email"><b>Email</b></label>
+     <input type="text" placeholder="Enter Email" name="email" required>
+
+     <label for="psw"><b>Password</b></label>
+     <input type="password" placeholder="Enter Password" name="psw" required>
+
+     <button type="submit" class="btn">Login</button>
+     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+     </form>
+     </div>
+     </div>
+
+<br>
+
+
+<div class="row">
+     <div class="search">
+         <e><br></e>
+         <e><br></e>
+         <e>Syllabus and TimeTable</e><br><br>
+         <a href="Time_Table.html"><button>Open</button></a>
+     </div>
+
+     
+     <div class="unli"><f>
+   
+  
+              <h2>Notes</h2>
+              
+              <a href="Notes.html">Notes</a>
+            </div>
+
+<div class=row2>
+       <div class="paper">
+              <e><br></e>
+              <e><br></e>
+              <e>Previous Year Question Papers</e><br><br>
+              <e>Choose Your Year</e><br>
+              <e>1st Year</e><br>
+              <e>2nd Year</e><br>
+              <e>3rd Year</e><br>
+              <e>4th Year</e>
+       </div>
+       <div class="group">
+              <e><br></e>
+              <e><br></e>
+              <e>Class Group</e><br><br>
+              <e>Choose Your Year</e><br>
+              <e>1st Year</e><br>
+              <e>2nd Year</e><br>
+              <e>3rd Year</e><br>
+              <e>4th Year</e>
+      </div>
+</div>
+
+<div class="main">
+<div class="first">
+     <div class="info">
+          <g><br><br></g>
+          <g>WHY COLLEGE LIBRARY</g><br><br>
+          <g>klfvnklzfnzzdvjknddjz</g><br>
+          <g>klfvnklzfnzzdvjknddjz</g><br>
+          <g>klfvnklzfnzzdvjknddjz</g><br>
+     </div>
+</div>
+
+<div class="second">
+<div class="slideshowBox">
+          
+        <div class="mySlides fade">
+              <img src="note2.jpg" height="350px";>
+        </div>
+        <div class="mySlides fade">
+              <img src="assignment1.jpg" height="350px";>
+        </div>
+        <div class="mySlides fade">
+              <img src="quespaper2.jpg" height="350px";>
+        </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div></div></div>
+
+
+
+<div class="lowest">
+   <div class="left">
+   <h3>Personal <br> Library</h3><br><br><br><br><br><br><br><br><br>
+   <a href="file:///C:/Users/manuc/Desktop/College_Library.html">HOME</a><br><br>
+   <a href="">CONTACT</a><br><br>
+   <a href="">CONTRIBUTION</a><br>
+   </div>
+
+   <div class="middle">
+   <br><br><br><br>
+   <h3>Some important Links</h3><br><br>
+   <a href="http://www.imsec.ac.in/"><font-color:black>IMSEC Official Website</font></a><br><br>
+   <a href="http://52.220.116.248/">IMSEC Portal</a><br><br>
+   <a href="https://aktu.ac.in/">AKTU Official</a><br><br>
+   </div>
+
+   <div class="right">
+   <br><br><br><br>
+   <h4>Any Query....you can ask here</h4><br>
+   <a href="#" class="fa fa-facebook"></a>
+   <a href="#" class="fa fa-linkedin"></a>
+   <a href="#" class="fa fa-instagram"></a>
+   </div>
+</div>
+
+
+
+
+<script>
+
+function openForm() {
+    document.getElementById("myForm").style.display="block";
+}
+function closeForm() {
+    document.getElementById("myForm").style.display="none";
+}
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html>
+
